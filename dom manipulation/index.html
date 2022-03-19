@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulations</title>
+    
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .one{
+            /* border: 2px solid red; */
+            color: white;
+            background-color: black;
+        }
+        .bg-primary{
+            color: brown;
+            padding: 20%;
+        }
+        .hello{
+            padding: 20%;
+        }
+
+
+    </style>
+    </head>
+<body>
+<div class="one">
+    <h4>This is sample heading that used for dom Manipulations by using the class name</h4>
+    <p>This is another paragraph used for the dom Manipulations by uisng the class name</p>
+</div>
+    
+<h1 id="fun">This is for the dom Manipulations by using id and class name</h1>
+<button id="click">Button</button>
+
+<ul>
+    <li>Menu</li>
+    <li>About us</li>
+    <li>Contact Us</li>
+    <li>Reach Us</li>
+</ul>
+
+
+
+<script>
+    // using the javascript id we can change the color like bcg and font-sizes
+    // Using the id we can target only one element by using the class we can target all the elements inside the tag
+document.getElementById("fun").style.color="white"
+document.getElementById("fun").style.background="blue"
+document.getElementById("fun").style.border="4px solid black"
+
+
+// Using getElementById
+let element=document.getElementById("click")
+// let element1=document.getElementById("fun").value
+let element2=document.getElementById("fun").innerHTML="Hello world"
+let element3=document.getElementsByClassName("one")
+
+console.log(element)
+// console.log(element1)
+console.log(element2)
+console.log(element3)
+// changing the color by using the class name
+// element3[0].style.color="yellow"
+
+
+// adding new class and changing the color and styles 
+// here bg-primary is the class name and classList is the class Name
+// element3[0].classList.add("bg-primary")
+// element3[0].classList.add("hello")
+
+// we can  add and we can remove the class list using the below
+// element3[0].classList.remove("bg-primary")
+
+
+//InnerHTML
+// It will displays all the information inside the class
+// Displays the information with tags
+element3[0].innerHTML
+
+
+element3[0].innerText
+// Displays all the informaton inside the tags not with tags
+
+console.log(element.innerHTML)
+console.log(element3[0].innerText)
+
+
+
+// by using the tagName
+let pro=document.getElementsByTagName("li")
+console.log(pro)
+
+// creating the heading with the help of appendChild and innerHTML
+
+createdElement=document.createElement("h2")
+createdElement.innerHTML="This is some text that will be displayed inside the h2 tag"
+pro[0].appendChild(createdElement);// This is the 1st paragraph
+
+
+// replacing the appendChild with replace child element
+
+createdElement1=document.createElement("p")
+createdElement1.innerHTML="This is some text that will be displayed inside the h2 tag"
+pro[0].replaceChild(createdElement1,createdElement);// This is the 1st paragraph
+
+
+//if we want to extract information from the page we have to use 
+document.images
+document.location
+document.links
+document.body
+document.fonts
+document.forms
+document.domain
+document.URL
+document.domain
+
+//using the query selector
+// It will show the one div tag which is present 
+// return only one element
+sel=document.querySelector("one")
+console.log(sel)
+
+// using the querySlectorAll we can get all the class names
+// return all the elements inside the container
+// these are used for styling
+del=document.querySelectorAll("one")
+console.log(del)
+
+
+
+
+</script>
+
+
+    
+</body>
+</html>

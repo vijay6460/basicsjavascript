@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in javascript</title>
+</head>
+<body>
+   <!--  <div id="fun1" class="fun">
+        <h1>Hello world </h1>
+        <p>this is fun</p>
+
+    </div> -->
+
+
+<div id="gun">
+
+    </div>
+
+
+<button onclick="fun()">Activate Now</button>
+
+    <!-- <button id="submit" onclick="clicked()">Button</button> -->
+
+
+    <script>
+/*
+document.getElementById("fun1").style.background="red"
+        // events in javascript
+        /* function clicked(){
+           console.log("this button is clicked")
+        } */
+
+        // When it was loaded the function will execute
+       /*  window.onload=function(){
+        console.log("Document loaded")
+        }
+
+        fun1.addEventListner('click',function(){
+            console.log("clicked this")
+        })
+
+        fun1.addEventListner("onmouseover",function(){
+            console.log("mouseover")
+        })
+        fun1.addEventListner("mouseout",function(){
+            console.log("mouse out")
+        })
+
+        fun1.addEventListner("mouseup",function(){
+            console.log("mouseup")
+        })
+        fun1.addEventListner("mousedown",function(){
+            console.log("mousedown")
+        }) */
+
+      
+      
+           /*  let s=document.getElementById("clickme")
+      console.log(s)
+      document.getElementById("clickme").innerHTML="Submit"
+     */
+     
+
+    var input=document.getElementById("gun").innerHTML=
+        `<form>
+        <input type="text" placeholder="Enter your 1st name"><br/>
+        <input type="text" placeholder="Enter your last name"><br/>
+        <input type="email" placeholder="Enter your email id"><br/>
+        <button>Submit</button>
+        </form>`
+     
+        function fun(){
+        //    let s= input.document.getElementById("gun")
+        //    alert(s)
+    document.write(`${input}`)
+        }
+     </script>
+</body>
+</html>
